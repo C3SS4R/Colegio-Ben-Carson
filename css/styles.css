@@ -182,9 +182,8 @@
   }
   .m-parent .chev { transition: transform .3s var(--ease-out); }
   .m-parent.open .chev { transform: rotate(180deg); }
-  .m-sub { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .3s var(--ease-out); }
-  .m-sub > * { overflow: hidden; }
-  .m-parent.open + .m-sub { grid-template-rows: 1fr; }
+  .m-sub { overflow: hidden; max-height: 0; transition: max-height .35s var(--ease-out); }
+  .m-parent.open + .m-sub { max-height: 500px; }
   .m-sub a { display: block; color: rgba(255,255,255,.66); text-decoration: none; font-size: .9rem; padding: .5rem 0 .5rem 1rem; }
   .m-sub a:hover { color: var(--gold); }
   .m-cta { color: #fff !important; background: linear-gradient(135deg, var(--green-deep), var(--green) 55%, var(--green-light)); padding: .75rem 1rem !important; border-radius: 8px; text-align: center; font-weight: 700; margin-top: .7rem; border: none !important; }
