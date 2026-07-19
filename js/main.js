@@ -102,7 +102,7 @@
       if(a && e.isIntersecting){ Object.values(navMap).forEach(function(x){ x.classList.remove('active'); }); a.classList.add('active'); }
     });
   }, { rootMargin: '-45% 0px -50% 0px' });
-  ['sobre','cursos','atualidade','contactos'].forEach(function(id){ var s=document.getElementById(id); if(s) spy.observe(s); });
+  ['sobre','galeria','cursos','atualidade','contactos'].forEach(function(id){ var s=document.getElementById(id); if(s) spy.observe(s); });
 
   // ── Parallax (rAF, respects reduced-motion) ──
   if(!reduce){
