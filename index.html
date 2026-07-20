@@ -10,8 +10,11 @@
 <meta name="keywords" content="Instituto Ben Carson, ensino médio Angola, curso técnico Luanda, administração e gestão, finanças, contabilidade, informática de gestão, matrículas Camama Kiaxi">
 <meta name="author" content="Instituto Médio Privado Ben Carson">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0B1E5B">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0B1E5B" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#070d24" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://www.imagbc.ao/">
+<script>(function(){try{var m=matchMedia('(prefers-color-scheme: dark)');var s=function(e){document.documentElement.setAttribute('data-theme',e.matches?'dark':'light');};s(m);m.addEventListener?m.addEventListener('change',s):m.addListener(s);}catch(e){}})();</script>
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -132,6 +135,7 @@
         <div class="drop">
           <a href="#equipa">Equipa</a>
           <a href="#galeria">Galeria</a>
+          <a href="momentos-extraescolares.html">Momentos Extraescolares</a>
           <a href="#historia">História</a>
           <a href="#parceiros">Parceiros</a>
         </div>
@@ -160,6 +164,7 @@
         <a href="#sobre">Visão geral</a>
         <a href="#equipa">Equipa</a>
         <a href="#galeria">Galeria</a>
+        <a href="momentos-extraescolares.html">Momentos Extraescolares</a>
         <a href="#historia">História</a>
         <a href="#parceiros">Parceiros</a>
       </div>
@@ -288,6 +293,10 @@
       <figure data-anim="scale"><img src="assets/img/grupo-institucional.jpg" alt="Alunos em evento institucional" loading="lazy"></figure>
       <figure data-anim="scale"><img src="assets/img/aluna-sorriso.jpg" alt="Aluna do Instituto Ben Carson" loading="lazy"></figure>
     </div>
+
+    <div style="text-align:center;margin-top:2.5rem;" data-anim="up">
+      <a href="momentos-extraescolares.html" class="btn-primary magnetic">Ver momentos extraescolares <svg class="ico"><use href="#i-arrow-up" style="transform:rotate(90deg);transform-origin:center;"/></svg></a>
+    </div>
   </div>
 </section>
 
@@ -319,17 +328,23 @@
 <!-- EQUIPA -->
 <section id="equipa">
   <div class="container">
-    <span class="ph-badge" data-anim="up"><svg class="ico"><use href="#i-users"/></svg> Conteúdo a preencher</span>
     <p class="section-label" data-anim="up">Quem nos lidera</p>
     <h2 class="section-title" data-anim="up">A nossa Equipa</h2>
     <div class="gold-divider" data-anim="left"></div>
-    <p class="section-desc" data-anim="up"><span class="ph-txt">Apresente a direção e a equipa de gestão. Substitua os nomes, cargos e (opcionalmente) adicione fotografias.</span></p>
+    <p class="section-desc" data-anim="up">A direção e a equipa de gestão que orientam o dia a dia do Instituto, comprometidas com a excelência académica e o sucesso dos nossos alunos.</p>
+
+    <div class="team-card team-lead" data-anim="scale">
+      <div class="team-avatar photo"><img src="assets/img/equipa/paulo-cassenda.jpg" alt="Paulo Cassenda, Director Geral" loading="lazy"></div>
+      <div class="team-name">Paulo Cassenda</div>
+      <div class="team-role">Director Geral</div>
+      <p>Lidera a visão e a estratégia institucional do Instituto Ben Carson.</p>
+    </div>
 
     <div class="team-grid" data-stagger>
-      <div class="team-card" data-anim="scale"><div class="team-avatar"><svg class="ico"><use href="#i-users"/></svg></div><div class="team-name">[Nome]</div><div class="team-role">Diretor(a) Geral</div><p class="ph-txt">Breve descrição.</p></div>
-      <div class="team-card" data-anim="scale"><div class="team-avatar"><svg class="ico"><use href="#i-users"/></svg></div><div class="team-name">[Nome]</div><div class="team-role">Diretor(a) Pedagógico(a)</div><p class="ph-txt">Breve descrição.</p></div>
-      <div class="team-card" data-anim="scale"><div class="team-avatar"><svg class="ico"><use href="#i-users"/></svg></div><div class="team-name">[Nome]</div><div class="team-role">Coordenador(a)</div><p class="ph-txt">Breve descrição.</p></div>
-      <div class="team-card" data-anim="scale"><div class="team-avatar"><svg class="ico"><use href="#i-users"/></svg></div><div class="team-name">[Nome]</div><div class="team-role">Secretaria</div><p class="ph-txt">Breve descrição.</p></div>
+      <div class="team-card" data-anim="scale"><div class="team-avatar photo"><img src="assets/img/equipa/junior-lopes.jpg" alt="Júnior Lopes, Subdirector Pedagógico" loading="lazy"></div><div class="team-name">Júnior Lopes</div><div class="team-role">Subdirector Pedagógico</div><p>Coordena a qualidade do ensino e o percurso académico dos alunos.</p></div>
+      <div class="team-card" data-anim="scale"><div class="team-avatar photo"><img src="assets/img/equipa/gabriel-americo.jpg" alt="Gabriel Américo, Subdirector Financeiro" loading="lazy"></div><div class="team-name">Gabriel Américo</div><div class="team-role">Subdirector Financeiro</div><p>Responsável pela gestão financeira e sustentabilidade da instituição.</p></div>
+      <div class="team-card" data-anim="scale"><div class="team-avatar photo"><img src="assets/img/equipa/simao-hebo.jpg" alt="Simão Hebo, Subdirector Administrativo" loading="lazy"></div><div class="team-name">Simão Hebo</div><div class="team-role">Subdirector Administrativo</div><p>Gere os recursos e o funcionamento administrativo do Instituto.</p></div>
+      <div class="team-card" data-anim="scale"><div class="team-avatar photo"><img src="assets/img/equipa/helda-neto.jpg" alt="Helda Neto, Secretária Geral" loading="lazy"></div><div class="team-name">Helda Neto</div><div class="team-role">Secretária Geral</div><p>Assegura a organização documental e o apoio à comunidade educativa.</p></div>
     </div>
   </div>
 </section>
@@ -337,18 +352,16 @@
 <!-- PARCEIROS -->
 <section id="parceiros" class="alt">
   <div class="container">
-    <span class="ph-badge" data-anim="up"><svg class="ico"><use href="#i-handshake"/></svg> Conteúdo a preencher</span>
     <p class="section-label" data-anim="up">Trabalhamos em conjunto</p>
     <h2 class="section-title" data-anim="up">Parceiros</h2>
     <div class="gold-divider" data-anim="left"></div>
-    <p class="section-desc" data-anim="up"><span class="ph-txt">Adicione aqui os logótipos das empresas e instituições parceiras do Instituto (bancos, empresas de estágio, entidades oficiais, etc.).</span></p>
+    <p class="section-desc" data-anim="up">Empresas e instituições que colaboram com o Instituto na formação e integração dos nossos alunos.</p>
 
     <div class="partners-grid" data-stagger>
-      <div class="partner-box" data-anim="scale"><svg class="ico"><use href="#i-building"/></svg><span>Logótipo</span></div>
-      <div class="partner-box" data-anim="scale"><svg class="ico"><use href="#i-building"/></svg><span>Logótipo</span></div>
-      <div class="partner-box" data-anim="scale"><svg class="ico"><use href="#i-building"/></svg><span>Logótipo</span></div>
-      <div class="partner-box" data-anim="scale"><svg class="ico"><use href="#i-building"/></svg><span>Logótipo</span></div>
-      <div class="partner-box" data-anim="scale"><svg class="ico"><use href="#i-building"/></svg><span>Logótipo</span></div>
+      <div class="partner-box has-logo" data-anim="scale"><img src="assets/img/parceiros/HR_SPACE.jpeg" alt="HR.Space"></div>
+      <div class="partner-box has-logo" data-anim="scale"><img src="assets/img/parceiros/ICM.jpeg" alt="Instituto Médio Técnico Privado Imaculado Coração de Maria"></div>
+      <div class="partner-box has-logo" data-anim="scale"><img src="assets/img/parceiros/Mundo da Tecnologia.jpeg" alt="Mundo da Tecnologia"></div>
+      <div class="partner-box has-logo" data-anim="scale"><img src="assets/img/parceiros/NN CONGEST.jpeg" alt="NN Congest"></div>
     </div>
   </div>
 </section>
@@ -606,17 +619,15 @@
 <!-- CORPO DOCENTE -->
 <section id="docentes">
   <div class="container">
-    <span class="ph-badge" data-anim="up"><svg class="ico"><use href="#i-cap"/></svg> Conteúdo a preencher</span>
     <p class="section-label" data-anim="up">Quem ensina</p>
     <h2 class="section-title" data-anim="up">Corpo Docente</h2>
     <div class="gold-divider" data-anim="left"></div>
-    <p class="section-desc" data-anim="up"><span class="ph-txt">Apresente os professores e formadores. Substitua nomes, disciplinas e (opcionalmente) fotografias.</span></p>
+    <p class="section-desc" data-anim="up">Professores qualificados e dedicados, que aliam o rigor académico à proximidade com os alunos em cada área de formação.</p>
 
-    <div class="team-grid" data-stagger>
-      <div class="team-card" data-anim="scale"><div class="team-avatar"><svg class="ico"><use href="#i-cap"/></svg></div><div class="team-name">[Nome do docente]</div><div class="team-role">Contabilidade</div><p class="ph-txt">Habilitações / experiência.</p></div>
-      <div class="team-card" data-anim="scale"><div class="team-avatar"><svg class="ico"><use href="#i-cap"/></svg></div><div class="team-name">[Nome do docente]</div><div class="team-role">Informática de Gestão</div><p class="ph-txt">Habilitações / experiência.</p></div>
-      <div class="team-card" data-anim="scale"><div class="team-avatar"><svg class="ico"><use href="#i-cap"/></svg></div><div class="team-name">[Nome do docente]</div><div class="team-role">Finanças</div><p class="ph-txt">Habilitações / experiência.</p></div>
-      <div class="team-card" data-anim="scale"><div class="team-avatar"><svg class="ico"><use href="#i-cap"/></svg></div><div class="team-name">[Nome do docente]</div><div class="team-role">Gestão Empresarial</div><p class="ph-txt">Habilitações / experiência.</p></div>
+    <div class="team-grid docentes" data-stagger>
+      <div class="team-card" data-anim="scale"><div class="team-avatar photo"><img src="assets/img/docentes/estre-jeronimo.jpg" alt="Estre Jerónimo, professora de Administração de Empresas" loading="lazy"></div><div class="team-name">Estre Jerónimo</div><div class="team-role">Administração de Empresas</div><p>Leciona Administração de Empresas, desenvolvendo competências de gestão e liderança.</p></div>
+      <div class="team-card" data-anim="scale"><div class="team-avatar photo"><img src="assets/img/docentes/jose-gamboa.jpg" alt="José Gamboa, professor de Contabilidade" loading="lazy"></div><div class="team-name">José Gamboa</div><div class="team-role">Contabilidade</div><p>Leciona Contabilidade, orientando os alunos no domínio da prática contabilística.</p></div>
+      <div class="team-card" data-anim="scale"><div class="team-avatar photo"><img src="assets/img/docentes/rafael-serrao.jpg" alt="Rafael Serrão, professor de Direito" loading="lazy"></div><div class="team-name">Rafael Serrão</div><div class="team-role">Direito</div><p>Leciona Direito, introduzindo os fundamentos jurídicos aplicados à gestão.</p></div>
     </div>
   </div>
 </section>
