@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+  body {
+    @apply bg-paper text-ink font-body antialiased;
+    overflow-x: hidden;
+  }
+  ::selection {
+    @apply bg-royal-600 text-white;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8;
+  }
+  /* Eyebrow / kicker */
+  .eyebrow {
+    @apply font-cond font-bold uppercase tracking-[0.22em] text-orange-500;
+  }
+  /* Assinatura "ascensão" — regra ascendente laranja */
+  .ascent-rule {
+    height: 3px;
+    width: 64px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #f97316, #fb923c);
+    transform-origin: left center;
+  }
+  /* Mosaico da galeria */
+  .mosaic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 190px;
+    grid-auto-flow: dense;
+    gap: 12px;
+  }
+  .mosaic .wide { grid-column: span 2; }
+  .mosaic .tall { grid-row: span 2; }
+  @media (max-width: 900px) {
+    .mosaic { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
+  }
+  @media (max-width: 520px) {
+    .mosaic .tall { grid-row: span 1; }
+  }
+  /* Masonry momentos */
+  .masonry {
+    column-count: 4;
+    column-gap: 14px;
+  }
+  .masonry > * { break-inside: avoid; margin-bottom: 14px; }
+  @media (max-width: 1000px) { .masonry { column-count: 3; } }
+  @media (max-width: 700px) { .masonry { column-count: 2; } }
+  @media (max-width: 440px) { .masonry { column-count: 1; } }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
